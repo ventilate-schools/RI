@@ -31,6 +31,17 @@ Know that other diseases are airborne too: Measles (studies [1](https://www.ncbi
 - [Bristol Warren](Bristol_Warren/): 6 schools
 - [East Providence](East_Providence/): 13 schools
 - [Providence](Providence/): 29 schools
+- [Coventry](Coventry/): 8 schools
+- [Chariho](Chariho/): 8 schools
+- [Cumberland](Cumberland/): 9 schools
+- [Burrillville](Burrillville/): 5 schools
+- [Central Falls](Central_Falls/): 7 schools
+- [Cranston](Cranston/): 22 schools
+- [East Greenwich](East_Greenwich/): 6 schools
+- [Exeter-West Greenwich](Exeter-West_Greenwich/): 3 schools
+- [Foster](Foster/): 1 schools
+- [Foster-Glocester](Foster-Glocester/): 2 schools
+
 
 # Site ownership
 
