@@ -14,7 +14,7 @@ title: Nayatt School
 
 **Website**: <https://www.usnews.com/education/k12/rhode-island/districts/barrington-101641>
 
-**Students**: nan
+**Students**: TODO
 
 **School's overall airborne virus protection grade (0-5)**: 0
 

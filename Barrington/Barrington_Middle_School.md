@@ -14,7 +14,7 @@ title: Barrington Middle School
 
 **Website**: <https://www.usnews.com/education/k12/rhode-island/districts/barrington-101641>
 
-**Students**: 850.0
+**Students**: 850
 
 **School's overall airborne virus protection grade (0-5)**: 0
 

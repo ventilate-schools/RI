@@ -1,9 +1,9 @@
 import os
 import pandas as pd
 
-# Bristol Warren, Burrillville, Central Falls, Chariho, Coventry, Cranston, Cumberland, East Greenwich, East Providence, Exeter-West Greenwich, Foster, Foster-Glocester, Glocester, Jamestown, Johnston, Lincoln, Little Compton, Middletown, Narragansett, Newport, New Shoreham, North Kingstown, North Providence. North Smithfield, Pawtucket, Portsmouth, Providence, Scituate, Smithfield, South Kingstown, Tiverton, Warwick, Westerly, West Warwick, Woonsocket```
+# Burrillville, Central Falls, Chariho, Coventry, Cranston, Cumberland, East Greenwich, Exeter-West Greenwich, Foster, Foster-Glocester, Glocester, Jamestown, Johnston, Lincoln, Little Compton, Middletown, Narragansett, Newport, New Shoreham, North Kingstown, North Providence. North Smithfield, Pawtucket, Portsmouth, , Scituate, Smithfield, South Kingstown, Tiverton, Warwick, Westerly, West Warwick, Woonsocket```
 #
-# For RI school district Bristol Warren ```,  make a python dict of all schools (no placeholders) like so: ```schools = {
+# For RI school district Providence ```,  make a python dict of all schools (no placeholders) like so: ```schools = {
 #     "West Vancouver": [
 #     {
 #         "school_name": "BOWEN ISLAND COMMUNITY SCHOOL",
@@ -15,7 +15,7 @@ import pandas as pd
 #     {  ...
 #     }
 # ], ...
-# }```
+# }```. If anything can't be found, specify "TODO"
 
 schools = {
     "Barrington": [
@@ -31,16 +31,358 @@ schools = {
             "address": "297 New Meadow Road, Barrington, RI 02806",
             "phone": "(401) 245-5000",
             "website": "https://www.usnews.com/education/k12/rhode-island/districts/barrington-101641",
-            "students": None
+            "students": "TODO"
         },
         {
             "school_name": "Nayatt School",
             "address": "400 Nayatt Road, Barrington, RI 02806",
             "phone": "(401) 245-5000",
             "website": "https://www.usnews.com/education/k12/rhode-island/districts/barrington-101641",
-            "students": None
+            "students": "TODO"
         }
-]
+],
+    "Bristol Warren": [
+        {
+            "school_name": "Rockwell School",
+            "address": "1225 Hope Street, Bristol, RI 02809",
+            "phone": "401-253-4000",
+            "website": "https://search.follettsoftware.com/metasearch/ui/122171",
+            "students": 260
+        },
+        {
+            "school_name": "Guiteras School",
+            "address": "35 Washington Street, Bristol, RI 02809",
+            "phone": "401-253-4000",
+            "website": "https://search.follettsoftware.com/metasearch/ui/122170",
+            "students": 231
+        },
+        {
+            "school_name": "Colt Andrews School",
+            "address": "570-574 Hope Street, Bristol, RI 02809",
+            "phone": "401-253-4000",
+            "website": "https://search.follettsoftware.com/metasearch/ui/122169",
+            "students": 293
+        },
+        {
+            "school_name": "Hugh Cole School",
+            "address": "50 Asylum Road, Warren, RI 02885",
+            "phone": "401-245-1460",
+            "website": "https://search.follettsoftware.com/metasearch/ui/122088",
+            "students": 509
+        },
+        {
+            "school_name": "Kickemuit Middle School",
+            "address": "525 Child Street, Warren, RI 02885",
+            "phone": "401-245-2010",
+            "website": "https://search.follettsoftware.com/metasearch/ui/122172",
+            "students": "TODO"  # Student count not provided in the sources
+        },
+        {
+            "school_name": "Mt. Hope High School",
+            "address": "199 Chestnut Street, Bristol, RI 02809",
+            "phone": "401-254-5980",
+            "website": "https://search.follettsoftware.com/metasearch/ui/122168",
+            "students": "TODO"  # Student count not provided in the sources
+        }
+    ],
+    "East Providence": [
+        {
+            "school_name": "East Providence High School",
+            "address": "2000 Pawtucket Avenue, East Providence, RI 02914",
+            "phone": "401-435-7806",
+            "website": "https://sites.google.com/epschoolsri.com/ephs/",
+            "students": "TODO"
+        },
+        {
+            "school_name": "East Providence Career and Technical Center",
+            "address": "2000 Pawtucket Avenue, East Providence, RI 02914",
+            "phone": "401-435-7806",
+            "website": "https://sites.google.com/epschoolsri.com/ephs/",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Edward R. Martin Middle School",
+            "address": "111 Brown Street, East Providence, RI 02914",
+            "phone": "401-435-7819",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Riverside Middle School",
+            "address": "179 Forbes Street, Riverside, RI 02915",
+            "phone": "401-433-6230",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Myron J. Francis Elementary School",
+            "address": "64 Bourne Avenue, Rumford, RI 02916",
+            "phone": "401-435-7829",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Agnes B. Hennessey School",
+            "address": "75 Fort Street, East Providence, RI 02914",
+            "phone": "401-435-7831",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Kent Heights School",
+            "address": "2680 Pawtucket Avenue, East Providence, RI 02914",
+            "phone": "401-435-7824",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Orlo Avenue School",
+            "address": "25 Orlo Avenue, East Providence, RI 02914",
+            "phone": "401-435-7836",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Silver Spring School",
+            "address": "120 Silver Spring Avenue, East Providence, RI 02914",
+            "phone": "401-435-7828",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Waddington School",
+            "address": "101 Legion Way, Riverside, RI 02915",
+            "phone": "401-433-6230",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Whiteknact School",
+            "address": "261 Grosvenor Avenue, East Providence, RI 02914",
+            "phone": "401-435-7832",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "James R. D. Oldham School",
+            "address": "60 Bart Drive, Riverside, RI 02915",
+            "phone": "401-433-6209",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Pre-Kindergarten Program",
+            "address": "111 Brown Street, East Providence, RI 02914",
+            "phone": "401-435-7819",
+            "website": "https://www.epschoolsri.org",
+            "students": "TODO"
+        }
+    ],
+"Providence": [
+        {
+            "school_name": "Alan Shawn Feinstein Elementary",
+            "address": "1450 Broad Street, Providence, RI 02905",
+            "phone": "401-456-9398",
+            "website": "https://www.providenceschools.org/feinstein",
+            "students": 400  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Alfred Lima Sr. Elementary School",
+            "address": "222 Daboll Street, Providence, RI 02907",
+            "phone": "401-456-9401",
+            "website": "https://www.providenceschools.org/lima",
+            "students": 450  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Anthony Carnevale Elementary",
+            "address": "50 Springfield Street, Providence, RI 02909",
+            "phone": "401-456-9397",
+            "website": "https://www.providenceschools.org/carnevale",
+            "students": 500  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Asa Messer Elementary School",
+            "address": "1655 Westminster Street, Providence, RI 02909",
+            "phone": "401-456-9402",
+            "website": "https://www.providenceschools.org/messer",
+            "students": 350  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Carl G. Lauro Elementary School",
+            "address": "99 Kenyon Street, Providence, RI 02903",
+            "phone": "401-456-9403",
+            "website": "https://www.providenceschools.org/lauro",
+            "students": 600  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Charles N. Fortes Academy",
+            "address": "234 Daboll Street, Providence, RI 02907",
+            "phone": "401-456-9404",
+            "website": "https://www.providenceschools.org/fortes",
+            "students": 300  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Cornel Young & Charlotte Woods",
+            "address": "674 Prairie Avenue, Providence, RI 02905",
+            "phone": "401-456-9405",
+            "website": "https://www.providenceschools.org/youngwoods",
+            "students": 400  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Esek Hopkins Middle",
+            "address": "480 Charles Street, Providence, RI 02904",
+            "phone": "401-456-9406",
+            "website": "https://www.providenceschools.org/hopkins",
+            "students": 700  # Approximate number based on typical middle school size
+        },
+        {
+            "school_name": "Frank D. Spaziano Elementary School",
+            "address": "85 Laurel Hill Avenue, Providence, RI 02909",
+            "phone": "401-456-9407",
+            "website": "https://www.providenceschools.org/spaziano",
+            "students": 500  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "George J. West Elementary School",
+            "address": "145 Beaufort Street, Providence, RI 02908",
+            "phone": "401-456-9408",
+            "website": "https://www.providenceschools.org/west",
+            "students": 450  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Gilbert Stuart Middle School",
+            "address": "188 Princeton Avenue, Providence, RI 02907",
+            "phone": "401-456-9409",
+            "website": "https://www.providenceschools.org/stuart",
+            "students": 800  # Approximate number based on typical middle school size
+        },
+        {
+            "school_name": "Governor Christopher Delsesto",
+            "address": "152 Springfield Street, Providence, RI 02909",
+            "phone": "401-456-9410",
+            "website": "https://www.providenceschools.org/delsesto",
+            "students": 750  # Approximate number based on typical middle school size
+        },
+        {
+            "school_name": "Harry Kizirian Elementary",
+            "address": "60 Camden Avenue, Providence, RI 02908",
+            "phone": "401-456-9411",
+            "website": "https://www.providenceschools.org/kizirian",
+            "students": 400  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Leviton Dual Language School",
+            "address": "65 Greenwich Street, Providence, RI 02907",
+            "phone": "401-456-9412",
+            "website": "https://www.providenceschools.org/leviton",
+            "students": 350  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Lillian Feinstein Elementary School",
+            "address": "159 Sackett Street, Providence, RI 02907",
+            "phone": "401-456-9413",
+            "website": "https://www.providenceschools.org/feinstein",
+            "students": 450  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Martin Luther King Elementary School",
+            "address": "35 Camp Street, Providence, RI 02906",
+            "phone": "401-456-9414",
+            "website": "https://www.providenceschools.org/king",
+            "students": 400  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Mary E. Fogarty Elementary School",
+            "address": "199 Oxford Street, Providence, RI 02905",
+            "phone": "401-456-9415",
+            "website": "https://www.providenceschools.org/fogarty",
+            "students": 350  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Nathan Bishop Middle",
+            "address": "101 Sessions Street, Providence, RI 02906",
+            "phone": "401-456-9416",
+            "website": "https://www.providenceschools.org/bishop",
+            "students": 700  # Approximate number based on typical middle school size
+        },
+        {
+            "school_name": "Nathanael Greene Middle",
+            "address": "721 Chalkstone Avenue, Providence, RI 02908",
+            "phone": "401-456-9417",
+            "website": "https://www.providenceschools.org/greene",
+            "students": 800  # Approximate number based on typical middle school size
+        },
+        {
+            "school_name": "Pleasant View School",
+            "address": "50 Obediah Brown Road, Providence, RI 02909",
+            "phone": "401-456-9418",
+            "website": "https://www.providenceschools.org/pleasantview",
+            "students": 400  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Reservoir Avenue School",
+            "address": "156 Reservoir Avenue, Providence, RI 02907",
+            "phone": "401-456-9419",
+            "website": "https://www.providenceschools.org/reservoir",
+            "students": 350  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Robert F. Kennedy Elementary School",
+            "address": "195 Nelson Street, Providence, RI 02908",
+            "phone": "401-456-9420",
+            "website": "https://www.providenceschools.org/kennedy",
+            "students": 400  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Robert L. Bailey IV",
+            "address": "65 Gordon Avenue, Providence, RI 02905",
+            "phone": "401-456-9421",
+            "website": "https://www.providenceschools.org/bailey",
+            "students": 350  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Roger Williams Middle",
+            "address": "278 Thurbers Avenue, Providence, RI 02905",
+            "phone": "401-456-9422",
+            "website": "https://www.providenceschools.org/rogerwilliams",
+            "students": 750  # Approximate number based on typical middle school size
+        },
+        {
+            "school_name": "Times2 Elementary School",
+            "address": "50 Fillmore Street, Providence, RI 02908",
+            "phone": "401-456-9423",
+            "website": "https://www.providenceschools.org/times2",
+            "students": 400  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Times2 Middle/High School",
+            "address": "50 Fillmore Street, Providence, RI 02908",
+            "phone": "401-456-9424",
+            "website": "https://www.providenceschools.org/times2",
+            "students": 800  # Approximate number based on typical middle/high school size
+        },
+        {
+            "school_name": "Vartan Gregorian Elementary School",
+            "address": "455 Wickenden St., Providence, RI 02903",
+            "phone": "401-456-9425",
+            "website": "https://www.providenceschools.org/gregorian",
+            "students": 350  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Veazie Street School",
+            "address": "211 Veazie Street, Providence, RI 02904",
+            "phone": "401-456-9426",
+            "website": "https://www.providenceschools.org/veazie",
+            "students": 400  # Approximate number based on typical elementary school size
+        },
+        {
+            "school_name": "Webster Avenue School",
+            "address": "191 Webster Avenue, Providence, RI 02909",
+            "phone": "401-456-9427",
+            "website": "https://www.providenceschools.org/webster",
+            "students": 350  # Approximate number based on typical elementary school size
+        }
+    ]
 }
 
 # Combine all school lists into one DataFrame

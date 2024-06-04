@@ -28,7 +28,9 @@ Know that other diseases are airborne too: Measles (studies [1](https://www.ncbi
 # Rhode Island School Districts:
 
 - [Barrington](Barrington/): 3 schools
-
+- [Bristol Warren](Bristol_Warren/): 6 schools
+- [East Providence](East_Providence/): 13 schools
+- [Providence](Providence/): 29 schools
 
 # Site ownership
 
