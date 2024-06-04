@@ -1,21 +1,6 @@
 import os
 import pandas as pd
 
-#
-# For RI school districts, Glocester, Jamestown, Johnston, Lincoln, Little Compton, Middletown, Narragansett, Newport, New Shoreham, North Kingstown, North Providence. North Smithfield, Pawtucket, Portsmouth, , Scituate, Smithfield, South Kingstown, Tiverton, Warwick, Westerly, West Warwick, Woonsocket ```,  make a python dict of all schools (no placeholders) like so: ```schools = {
-#     "West Vancouver": [
-#     {
-#         "school_name": "BOWEN ISLAND COMMUNITY SCHOOL",
-#         "address": "1041 Mount Gardner Rd., Bowen Island V0N 1G0",
-#         "phone": "604-947-9337"
-#         "website": "URL"
-#         "students": 1234
-#     },
-#     {  ...
-#     }
-# ], ...
-# }```. If anything can't be found, specify "TODO"
-
 schools = {
     "Barrington": [
         {
@@ -899,6 +884,484 @@ schools = {
             "students": "TODO"
         }
     ],
+    "Glocester": [
+        {
+            "school_name": "Fogarty Memorial School",
+            "address": "736 Snake Hill Road, North Scituate, RI 02857",
+            "phone": "+1 401-568-6211",
+            "website": "https://fms.glocschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "West Glocester Elementary School",
+            "address": "111 Reynolds Road, Chepachet, RI 02814",
+            "phone": "+1 401-567-0350",
+            "website": "https://wges.glocschools.org",
+            "students": "TODO"
+        }
+    ],
+    "Jamestown": [
+        {
+            "school_name": "Melrose School",
+            "address": "76 Melrose Avenue, Jamestown, RI 02835",
+            "phone": "+1 401-423-7020",
+            "website": "https://www.jamestownschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Lawn Avenue School",
+            "address": "55 Lawn Avenue, Jamestown, RI 02835",
+            "phone": "+1 401-423-7010",
+            "website": "https://www.jamestownschools.org",
+            "students": "TODO"
+        }
+    ],
+    "Johnston": [
+        {
+            "school_name": "Brown Avenue School",
+            "address": "14 Brown Avenue, Johnston, RI 02919",
+            "phone": "+1 401-231-6652",
+            "website": "https://www.johnstonschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Sarah Dyer Barnes School",
+            "address": "24 Barnes Avenue, Johnston, RI 02919",
+            "phone": "+1 401-231-6615",
+            "website": "https://www.johnstonschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Thornton School",
+            "address": "4 School Street, Johnston, RI 02919",
+            "phone": "+1 401-233-0054",
+            "website": "https://www.johnstonschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Winsor Hill School",
+            "address": "100 Theresa Street, Johnston, RI 02919",
+            "phone": "+1 401-233-1180",
+            "website": "https://www.johnstonschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Early Childhood Center",
+            "address": "10 Memorial Avenue, Johnston, RI 02919",
+            "phone": "+1 401-233-0054",
+            "website": "https://www.johnstonschools.org",
+            "students": "TODO"
+        }
+    ],
+    "Lincoln": [
+        {
+            "school_name": "Saylesville School",
+            "address": "50 Woodland Street, Lincoln, RI 02865",
+            "phone": "+1 401-725-4200",
+            "website": "https://www.lincolnps.org",
+            "students": "TODO"
+        }
+    ],
+    "Little Compton": [
+        {
+            "school_name": "Wilbur & McMahon Schools",
+            "address": "28 Commons, Little Compton, RI 02837",
+            "phone": "+1 401-635-2351",
+            "website": "https://www.littlecomptonschools.org",
+            "students": "TODO"
+        }
+    ],
+    "Middletown": [
+        {
+            "school_name": "Joseph H. Gaudet School",
+            "address": "1113 Aquidneck Avenue, Middletown, RI 02842",
+            "phone": "+1 401-846-6395",
+            "website": "https://www.mpsri.net",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Aquidneck School",
+            "address": "70 Reservoir Road, Middletown, RI 02842",
+            "phone": "+1 401-846-9590",
+            "website": "https://www.mpsri.net",
+            "students": "TODO"
+        }
+    ],
+    "Narragansett": [
+        {
+            "school_name": "Narragansett High School",
+            "address": "245 South Pier Road, Narragansett, RI 02882",
+            "phone": "+1 401-792-9400",
+            "website": "https://www.nssk12.org",
+            "students": 500
+        },
+        {
+            "school_name": "Narragansett Pier Middle School",
+            "address": "235 South Pier Road, Narragansett, RI 02882",
+            "phone": "+1 401-792-9430",
+            "website": "https://www.nssk12.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Narragansett Elementary School",
+            "address": "55 Mumford Road, Narragansett, RI 02882",
+            "phone": "+1 401-792-9420",
+            "website": "https://www.nssk12.org",
+            "students": "TODO"
+        }
+    ],
+    "Newport": [
+        {
+            "school_name": "Claiborne Pell Elementary School",
+            "address": "35 Dexter Street, Newport, RI 02840",
+            "phone": "+1 401-842-1900",
+            "website": "https://www.npsri.net",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Thompson Middle School",
+            "address": "55 Broadway, Newport, RI 02840",
+            "phone": "+1 401-847-1493",
+            "website": "https://www.npsri.net",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Rogers High School",
+            "address": "15 Wickham Road, Newport, RI 02840",
+            "phone": "+1 401-847-6235",
+            "website": "https://www.npsri.net",
+            "students": "TODO"
+        }
+    ],
+    "New Shoreham": [
+        {
+            "school_name": "Block Island School",
+            "address": "15 High Street, Block Island, RI 02807",
+            "phone": "+1 401-466-5600",
+            "website": "https://www.blockislandschool.net",
+            "students": "TODO"
+        }
+    ],
+    "North Kingstown": [
+        {
+            "school_name": "North Kingstown High School",
+            "address": "150 Fairway Drive, North Kingstown, RI 02852",
+            "phone": "+1 401-268-6236",
+            "website": "https://www.nksd.net",
+            "students": 1400
+        },
+        {
+            "school_name": "Davisville Middle School",
+            "address": "200 School Street, North Kingstown, RI 02852",
+            "phone": "+1 401-541-6300",
+            "website": "https://www.nksd.net",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Stony Lane Elementary School",
+            "address": "825 Stony Lane, North Kingstown, RI 02852",
+            "phone": "+1 401-541-6360",
+            "website": "https://www.nksd.net",
+            "students": "TODO"
+        }
+    ],
+    "North Providence": [
+        {
+            "school_name": "Centredale Elementary School",
+            "address": "41 Angell Avenue, North Providence, RI 02911",
+            "phone": "+1 401-233-1145",
+            "website": "https://www.npsd.k12.ri.us",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Greystone Elementary School",
+            "address": "100 Morgan Avenue, North Providence, RI 02911",
+            "phone": "+1 401-233-1130",
+            "website": "https://www.npsd.k12.ri.us",
+            "students": "TODO"
+        },
+        {
+            "school_name": "McGuire Elementary School",
+            "address": "55 Central Avenue, North Providence, RI 02911",
+            "phone": "+1 401-233-1135",
+            "website": "https://www.npsd.k12.ri.us",
+            "students": "TODO"
+        }
+    ],
+    "North Smithfield": [
+        {
+            "school_name": "Halliwell School",
+            "address": "358 Victory Highway, North Smithfield, RI 02896",
+            "phone": "+1 401-769-5492",
+            "website": "https://www.nsps.us",
+            "students": "TODO"
+        },
+        {
+            "school_name": "North Smithfield Elementary School",
+            "address": "2214 Providence Pike, North Smithfield, RI 02896",
+            "phone": "+1 401-765-2260",
+            "website": "https://www.nsps.us",
+            "students": "TODO"
+        }
+    ],
+    "Pawtucket": [
+        {
+            "school_name": "Curvin-McCabe Elementary School",
+            "address": "466 Cottage Street, Pawtucket, RI 02860",
+            "phone": "+1 401-729-6258",
+            "website": "https://www.psdri.net",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Goff Junior High School",
+            "address": "974 Newport Avenue, Pawtucket, RI 02861",
+            "phone": "+1 401-729-6500",
+            "website": "https://www.psdri.net",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Shea High School",
+            "address": "485 East Avenue, Pawtucket, RI 02860",
+            "phone": "+1 401-729-6445",
+            "website": "https://www.psdri.net",
+            "students": "TODO"
+        }
+    ],
+    "Portsmouth": [
+        {
+            "school_name": "Hathaway Elementary School",
+            "address": "53 Tallman Avenue, Portsmouth, RI 02871",
+            "phone": "+1 401-683-0500",
+            "website": "https://www.portsmouthschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Portsmouth Middle School",
+            "address": "125 Jepson Lane, Portsmouth, RI 02871",
+            "phone": "+1 401-849-3700",
+            "website": "https://www.portsmouthschoolsri.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Portsmouth High School",
+            "address": "120 Education Lane, Portsmouth, RI 02871",
+            "phone": "+1 401-683-2124",
+            "website": "https://www.portsmouthschoolsri.org",
+            "students": "TODO"
+        }
+    ],
+    "Scituate": [
+        {
+            "school_name": "Hope Elementary School",
+            "address": "391 North Road, Hope, RI 02831",
+            "phone": "+1 401-821-3651",
+            "website": "https://www.scituateschoolsri.net",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Clayville Elementary School",
+            "address": "3 George Washington Highway, Clayville, RI 02815",
+            "phone": "+1 401-647-4115",
+            "website": "https://www.scituateschoolsri.net",
+            "students": "TODO"
+        }
+    ],
+    "Smithfield": [
+        {
+            "school_name": "Old County Road School",
+            "address": "200 Old County Road, Smithfield, RI 02917",
+            "phone": "+1 401-231-6610",
+            "website": "https://www.smithfield-ps.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "William Winsor Elementary School",
+            "address": "562 Putnam Pike, Greenville, RI 02828",
+            "phone": "+1 401-949-2056",
+            "website": "https://www.smithfield-ps.org",
+            "students": "TODO"
+        }
+    ],
+    "South Kingstown": [
+        {
+            "school_name": "Peace Dale Elementary School",
+            "address": "109 Kersey Road, Peace Dale, RI 02879",
+            "phone": "+1 401-360-1600",
+            "website": "https://www.skschools.net",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Hazard School",
+            "address": "191 Church Street, Wakefield, RI 02879",
+            "phone": "+1 401-360-1200",
+            "website": "https://www.skschools.net",
+            "students": "TODO"
+        }
+    ],
+    "Tiverton": [
+        {
+            "school_name": "Pocasset School",
+            "address": "242 Main Road, Tiverton, RI 02878",
+            "phone": "+1 401-624-6654",
+            "website": "https://www.tivertonschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Tiverton Middle School",
+            "address": "10 Quintal Drive, Tiverton, RI 02878",
+            "phone": "+1 401-624-6668",
+            "website": "https://www.tivertonschools.org",
+            "students": "TODO"
+        }
+    ],
+    "Warwick": [
+        {
+            "school_name": "Cottrell F. Hoxsie School",
+            "address": "55 Glenwood Drive, Warwick, RI 02889",
+            "phone": "+1 401-734-3165",
+            "website": "https://www.warwickschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Harold F. Scott School",
+            "address": "833 Centerville Road, Warwick, RI 02886",
+            "phone": "+1 401-734-3585",
+            "website": "https://www.warwickschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Lippitt School",
+            "address": "30 Almy Street, Warwick, RI 02886",
+            "phone": "+1 401-734-3480",
+            "website": "https://www.warwickschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Norwood School",
+            "address": "266 Norwood Avenue, Warwick, RI 02888",
+            "phone": "+1 401-734-3485",
+            "website": "https://www.warwickschools.org",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Oakland Beach Elementary School",
+            "address": "383 Oakland Beach Avenue, Warwick, RI 02889",
+            "phone": "+1 401-734-3480",
+            "website": "https://www.warwickschools.org",
+            "students": "TODO"
+        }
+    ],
+    "Westerly": [
+        {
+            "school_name": "Springbrook Elementary School",
+            "address": "39 Springbrook Road, Westerly, RI 02891",
+            "phone": "+1 401-348-2340",
+            "website": "https://www.westerly.k12.ri.us",
+            "students": "TODO"
+        },
+        {
+            "school_name": "State Street School",
+            "address": "35 State Street, Westerly, RI 02891",
+            "phone": "+1 401-348-2345",
+            "website": "https://www.westerly.k12.ri.us",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Tower Street School",
+            "address": "93 Tower Street, Westerly, RI 02891",
+            "phone": "+1 401-348-2700",
+            "website": "https://www.westerly.k12.ri.us",
+            "students": "TODO"
+        }
+    ],
+    "West Warwick": [
+        {
+            "school_name": "John F. Horgan Elementary School",
+            "address": "124 Providence Street, West Warwick, RI 02893",
+            "phone": "+1 401-822-8454",
+            "website": "https://www.westwarwickpublicschools.com",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Wakefield Hills Elementary School",
+            "address": "505 Wakefield Street, West Warwick, RI 02893",
+            "phone": "+1 401-822-8450",
+            "website": "https://www.westwarwickpublicschools.com",
+            "students": "TODO"
+        }
+    ],
+"Woonsocket": [
+        {
+            "school_name": "Bernon Heights Elementary School",
+            "address": "311 Clinton Street, Woonsocket, RI 02895",
+            "phone": "(401) 767-4855",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/bernon_heights",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Globe Park Elementary School",
+            "address": "192 Avenue A, Woonsocket, RI 02895",
+            "phone": "(401) 767-4850",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/globe_park",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Harris Elementary School",
+            "address": "60 High School Street, Woonsocket, RI 02895",
+            "phone": "(401) 767-4855",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/harris",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Kevin K. Coleman Elementary School",
+            "address": "96 Second Avenue, Woonsocket, RI 02895",
+            "phone": "(401) 767-4855",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/kevin_k_coleman",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Leo A. Savoie Elementary School",
+            "address": "990 Mendon Road, Woonsocket, RI 02895",
+            "phone": "(401) 767-4820",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/savoie",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Pothier-Citizens' Elementary Campus",
+            "address": "250 Winthrop Street, Woonsocket, RI 02895",
+            "phone": "(401) 767-4850",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/pothier_citizens",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Hamlet Middle School",
+            "address": "60 Florence Drive, Woonsocket, RI 02895",
+            "phone": "(401) 767-4600",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/hamlet",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Villa Nova Middle School",
+            "address": "240 Florence Drive, Woonsocket, RI 02895",
+            "phone": "(401) 767-4600",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/villa_nova",
+            "students": "TODO"
+        },
+        {
+            "school_name": "Woonsocket High School",
+            "address": "777 Cass Avenue, Woonsocket, RI 02895",
+            "phone": "(401) 767-4700",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/woonsocket_high",
+            "students": 1500
+        },
+        {
+            "school_name": "Woonsocket Area Career and Technical Center",
+            "address": "777 Cass Avenue, Woonsocket, RI 02895",
+            "phone": "(401) 767-4600",
+            "website": "https://woonsocketschools.ss16.sharpschool.com/schools/woonsocket_area_career_and_technical_center",
+            "students": "TODO"
+        }
+    ]
 }
 
 # Combine all school lists into one DataFrame
